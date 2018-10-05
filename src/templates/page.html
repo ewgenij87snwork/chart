@@ -4,24 +4,37 @@ title: Index page
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-	
-	{# variable example #}
-	<h1>{{title}}</h1>
-
-	
-	{# partial example #}
-	{% include "partials/_header.html" %}
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
-
+<div class="wrap">
+	<!-- begin header -->
+	<div class="header" style="background: #ccc url(img/pattern.png); 0% 100% repeat-x"></div>
+	<!-- end header -->
+	<!-- begin main -->
+	<div class="main">
+		<div class="container">
+			<img src="img/logo.png" alt="" class="main__image"/>
+			<h1 class="main__title">Chart.js</h1>
+			<p class="main__suptitle">Simple yet flexible JavaScript charting for designers & developers</p>
+			<div class="btns">
+				<div class="btn btn-pink">Get Started</div>
+				<div class="btn btn-blue">Samples</div>
+				<div class="btn btn-black">GitHub</div>
+			</div>
+		</div>
+	</div>
+	<!-- end main -->
+	<!-- begin chart -->
+	<div class="chart">
+		<div class="container">
+			<div class="chart__left">
+				<div class="chart__top">
+					<div class="chart__new">New in 2.0</div>
+					<div class="chart__title">Mixed chart types</div>
+				</div>
+				<p class="chart__text">Mix ant match bar and line charts to provide a clear visual distinction between datasets.</p>
+			</div>
+			<img src="img/chart.png" alt="" class="chart__image"/>
+		</div>
+	</div>
+	<!-- end chart -->
+</div>
 {% endblock %}
