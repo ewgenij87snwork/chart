@@ -25,7 +25,7 @@
 
 	position: relative
 	top: -235px
-	padding-top: 40px
+	// padding-top: 40px
 	margin-bottom: -240px
 	background: #FFF 
 	&__image
@@ -44,6 +44,31 @@
 		font-size: 16px
 		text-align: center
 		margin-bottom: 14px
+	&__candles
+		padding-top: 30px
+		background: url('../img/candle-bg.jpg') 0% 100% no-repeat
+		background-size: cover
+		animation-name: candles
+		animation-duration: 55s
+		animation-iteration-count: 10
+		height: 50vh
+		overflow: hidden
+		
+@keyframes candles
+	
+	from
+		background-position: 100% 100%
+		// margin: 0
+		// left: 0
+		// top: 0
+		// opacity: 1
+		// height: 40vh
+	to
+		background-position: 0% 100%
+		// margin: 50px
+		// opacity: 0
+		// height: 60vh
+
 .btns
 
 	text-align: center 
