@@ -15,7 +15,7 @@
     <div class="out">
       <!-- begin header -->
       <!-- надо вставить фон 33% ширины, в анимации указать 3 раза background-position, и задать это на блок под иконку, заголовок, -->
-      <div class="header" style="background: #ccc url(img/pattern.png); 0% 100% repeat-x"></div>
+      <div class="header" style="background: #ccc url(img/pattern.png) 0% 100% repeat-x"></div>
       <!-- end header -->
       <div class="wrap">
         <!-- begin main -->
@@ -48,11 +48,13 @@
             </div>
             <div class="chart__text">Mix ant match bar and line charts to provide a clear visual distinction between datasets.</div>
           </div>
-          <img src="img/chart.png" alt="" class="chart__image" />
+          <!-- <img src="img/chart.png" alt="" class="chart__image"/> -->
+          <!-- img/chart.png -->
+          <div class="chart__image" style="background: url(img/chart.png) 50% 50% no-repeat;"></div>
         </div>
       </div>
       <!-- end chart -->
-    </div>
+      <!-- </div> -->
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
