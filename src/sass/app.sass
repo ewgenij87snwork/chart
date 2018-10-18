@@ -15,6 +15,7 @@
 	+r(900) 
 		width: 100%
 		border: none
+		margin-bottom: 0
 	
 .container
 	// width: 50%
@@ -26,17 +27,21 @@
 	height: 300px
 	+r(600) 
 		height: 400px
+		
 	
 		
 .main
 
 	position: relative
-	top: -350px
-	// padding-top: 40px
-	margin-bottom: -300px
-	background: #FFF 
+	top: -250px
+	padding: 0 20px
+	margin-bottom: -200px
+	+r(600)
+		background: rgba(0, 0, 0, .08)  
+	
 	+r(900) 
 		top: -400px
+		margin-bottom: -400px
 	&__image
 		position: relative
 		display: block
@@ -50,7 +55,7 @@
 		
 		
 		.icon
-			fill: rgba(255, 255, 255, .75)
+			fill: rgba(255, 255, 255, .85)
 	&__title
 		text-align: center
 		font-size:  3rem
@@ -61,10 +66,15 @@
 		margin: 0 auto
 		padding: 5px 15px
 		box-shadow: 0 0 5px #000
+		z-index: 1
+		+r(600) 
+			margin-top: -5%
+			margin-bottom: 5%
+		
 	&__suptitle
 		font-size: 1.2rem 
 		padding-bottom: 1rem
-		
+		margin-top: 200px
 		text-align: center
 		margin-bottom: 14px
 	&__candles
@@ -82,13 +92,26 @@
 				font-size: 100px
 				
 		
-		background: url('../img/candle-bg.jpg') 0% 100% no-repeat
+		background: url('../img/candle-bg.jpg') 0% 100% no-repeat 
+		// background: rgba(0, 0, 0, .1) 
 		background-size: cover
 		animation-name: candles
 		animation-duration: 85s
 		animation-iteration-count: 10
 		height: 50vh
 		overflow: hidden
+		&:before
+			content: ''
+			position: absolute 
+			width: 100%
+			height: 100%
+			background: rgba(0, 0, 0, .58) 
+			margin-bottom: -60px
+			margin-top: -60px
+			+r(600) 
+				margin-bottom: -120px
+			
+			
 		
 @keyframes candles
 	
@@ -145,6 +168,8 @@
 	background: rgba(168, 246, 56, .081)
 	padding-bottom: 40px
 	// margin-top: 50px
+	
+	
 	.container
 		padding-left: 35px
 		padding-right: 25px
@@ -191,6 +216,10 @@
 		background: #4bc0c0
 		color: #fff
 		font-weight: bold  
+		+r(600) 
+			top: -.6rem
+			
+		
 	&__title
 		font-size: 1.2rem
 		font-weight: bold 
