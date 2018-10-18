@@ -11,7 +11,6 @@
 	width: 50%
 	margin: 0 auto
 	border: 1px solid #bbb
-	padding-bottom: 20px
 	margin-bottom: 40px
 	+r(900) 
 		width: 100%
@@ -32,7 +31,7 @@
 	position: relative
 	top: -235px
 	// padding-top: 40px
-	margin-bottom: -240px
+	margin-bottom: -200px
 	background: #FFF 
 	+r(900) 
 		top: -300px
@@ -42,12 +41,13 @@
 		font-size: 120px
 		text-align: center
 		margin: 0 auto
+		margin-top: 50px
 		
 		.icon
 			fill: rgba(255, 255, 255, .75)
 	&__title
 		text-align: center
-		font-size:  80px
+		// font-size:  10rem
 		font-family: 'Open Sans', sans-serif
 		margin-bottom: 12px
 		color: #fff 
@@ -55,7 +55,9 @@
 		padding: 5px
 		box-shadow: 0 0 5px #000
 	&__suptitle
-		font-size: 16px
+		font-size: 1.2rem 
+		padding-bottom: 1rem
+		
 		text-align: center
 		margin-bottom: 14px
 	&__candles
@@ -114,6 +116,7 @@
 	border-radius: 5px
 	width: 130px
 	margin-right: 7px
+	margin-bottom: 40px
 	color: #FFF 
 	&:last-of-type
 		margin-right: 0
@@ -125,7 +128,9 @@
 	background: #343639
 
 .chart
-
+	background: rgba(168, 246, 56, .081)
+	padding-bottom: 40px
+	// margin-top: 50px
 	.container
 		padding-left: 35px
 		padding-right: 25px
@@ -139,7 +144,9 @@
 	&__image
 		width: 	90% 
 		min-height: 0
-		padding-bottom: 66.5% 
+		padding-top: 46.5% 
+		margin-top: 30px
+		margin-bottom: 30px
 		// margin-top: 30px
 		+r(600)
 			// background-size: cover -- pzkrykro co nie pracuje
@@ -161,16 +168,22 @@
 	&__new
 		margin-bottom: 30px
 		margin-right: 15px
-		font-size: 12px
-		line-height: 30px
-		padding: 0 5px
+		font-size: .8rem
+		position: relative
+		top: -.2rem
+		line-height: 1.1rem
+		padding: 5px 15px
 		border-radius: 7px
 		background: #4bc0c0
 		color: #fff
 		font-weight: bold  
 	&__title
-		font-size: 16px
+		font-size: 1.2rem
 		font-weight: bold 
 	&__text
-		font-size: 13px
+
+		font-size: 1rem
 		line-height: 1.5
+		+r(600) 
+			margin-bottom: 30px
+		
